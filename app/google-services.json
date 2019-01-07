@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1095989881255",
+    "firebase_url": "https://drive-242d0.firebaseio.com",
+    "project_id": "drive-242d0",
+    "storage_bucket": "drive-242d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095989881255:android:7b1872a3a1df551a",
+        "android_client_info": {
+          "package_name": "net.vokacom.drive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095989881255-il4sn0l83oab49hj8c10hdjigu9hlh1r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.vokacom.drive",
+            "certificate_hash": "486cbfd7dfb9fd79ce3720b1139aa7547730cf63"
+          }
+        },
+        {
+          "client_id": "1095989881255-07lnqr0c02og7rjahjt0qsk7ul6jnab3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKPLGQ37tDe29RME2UVlAK6EYMFBElagE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095989881255-07lnqr0c02og7rjahjt0qsk7ul6jnab3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

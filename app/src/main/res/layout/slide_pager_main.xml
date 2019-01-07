@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:orientation="vertical"
+    tools:context=".SlideViewPager.SlideMainPager"
+    android:theme="@style/Base.ThemeOverlay.AppCompat">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:animateLayoutChanges="?android:attr/windowSwipeToDismiss"
+        android:visibility="visible">
+
+
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/printsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:text="We Make and Deliver "
+        android:textColor="@color/white"
+        android:textFontWeight="10"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/viewPager"/>
+
+</RelativeLayout>

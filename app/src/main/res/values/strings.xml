@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Krapa Africa</string>
+    <string name="title_activity_navigation">African Fashion</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Sign Out</string>
+    <string name="product_detail">Details</string>
+    <string name="men">Men Wear</string>
+    <string name="women">Women wear</string>
+
+
+    <!-- Strings related to product details -->
+    <string name="banking1">Item Price</string>
+    <string name="REQUEST">Make Request</string>
+    <string name="links1">Short Description</string>
+    <string name="add1">Rating</string>
+    <string name="add_quantity">Quantity of Items</string>
+    <string name="bank_activities">Card Payment</string>
+    <string name="todo1">TODO</string>
+    <string name="make_payment">Total Amount to Pay</string>
+    <string name="apple_macbook_air_core_i5_5th_gen_8_gb_128_gb_ssd_mac_os_sierr">Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)</string>
+    <string name="cedi">¢</string>
+    <string name="about_card1_message">Pay with Mobile Money</string>
+    <string name="image_holder_for_scroll_view">Image Holder for Scroll View</string>
+    <string name="bodysize">Body sizes</string>
+
+
+    <string-array name="android_dropdown_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="android_dropdown_size">
+        <item>Choose Sizes</item>
+        <item> Uk size 6 Bust 33	Waist 25	Hips 35</item>
+        <item> Uk size 8 Bust 34	Waist 26	Hips 36</item>
+        <item> Uk size 10 Bust 36	Waist 28	Hips 38</item>
+        <item> Uk size 12 Bust 38	Waist 30	Hips 40</item>
+        <item> Uk size 14 Bust 40	Waist 32	Hips 42</item>
+        <item> Uk size 16 Bust 42	Waist 34	Hips 44</item>
+        <item> Uk size 18 Bust 44	Waist 36	Hips 46</item>
+        <item> Uk size 20 Bust 46	Waist 38	Hips 48</item>
+
+    </string-array>
+
+    <string-array name="android_dropdown_size_men">
+        <item>Choose Sizes</item>
+        <item> Uk size 34   Neck 14.5 	Chest 34	Waist 28    Seat 35.4   Inside Leg Length 32</item>
+        <item> Uk size 36   Neck 15 	Chest 36	Waist 30    Seat 37.4   Inside Leg Length 32</item>
+        <item> Uk size 38   Neck 15.5 	Chest 38	Waist 32    Seat 39.4   Inside Leg Length 32</item>
+        <item> Uk size 40   Neck 16 	Chest 40	Waist 34    Seat 41.3   Inside Leg Length 32</item>
+        <item> Uk size 42   Neck 16.5 	Chest 42	Waist 36    Seat 43.3   Inside Leg Length 32</item>
+        <item> Uk size 44   Neck 17 	Chest 44	Waist 38    Seat 45.3   Inside Leg Length 32</item>
+
+
+    </string-array>
+    <string name="title_activity_maps">Request Driver Map</string>
+
+</resources>
