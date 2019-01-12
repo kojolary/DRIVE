@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -24,10 +25,12 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
 import net.vokacom.drive.ItemClasses.NavigationActivity;
+import net.vokacom.drive.tailor.register.TailorRegister;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private SignInButton button;
+    private TextView tailor;
     FirebaseAuth mAuth;
     private final static int RC_SIGN_IN =2;
     private final static String TAG ="failed";
@@ -51,17 +54,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button = findViewById(R.id.googleBTN);
+        tailor = findViewById(R.id.tailor);
+
         // [START initialize_auth]
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
         // [END initialize_auth]
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signIn();
-            }
-        });
+        button.setOnClickListener(this);
+        tailor.setOnClickListener(this);
+
         mAuthListener= new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -131,5 +133,18 @@ public class MainActivity extends AppCompatActivity {
                         // ...
                     }
                 });
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.googleBTN){
+            signIn();
+        }
+        else if(v.getId() == R.id.tailor){
+            Intent myIntent = new Intent(MainActivity.this, TailorRegister.class);
+            startActivity(myIntent);
+            finish();
+        }
+
     }
 }

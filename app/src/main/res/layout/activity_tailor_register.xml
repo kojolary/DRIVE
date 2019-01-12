@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tailor.register.TailorRegister"
+    android:background="@drawable/driverpic"
+    android:id="@+id/rootLayout">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:fontFamily="casual"
+            android:textAlignment="center"
+            android:textSize="36dp"
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tailor"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:fontFamily="cursive"
+            android:textColor="@color/blue"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tailor_app"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Looking for the Client App?"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/orange"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tailor_app"
+        android:layout_margin="16dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signIN"
+            android:text="SIGN IN"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:background="@drawable/curved_shape_curious_blue"
+            android:layout_marginRight="6dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/register"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="REGISTER"
+            android:background="@color/orange_700"
+            android:layout_marginLeft="6dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
