@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,18 +8,16 @@
     tools:context=".MainActivity"
     android:background="@drawable/olga">
 
-    <RelativeLayout
-        android:id="@+id/l1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-       >
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="70dp"
+            android:textAlignment="center"
             android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
             android:fontFamily="casual"
             android:text="@string/app_name"
             android:textColor="@color/lightorange"
@@ -32,6 +30,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
             android:layout_marginStart="105dp"
             android:layout_marginTop="320dp"
             android:text="African Prints"
@@ -40,37 +40,40 @@
             android:textStyle="bold"
             tools:fontFamily="cursive" />
 
-        <com.google.android.gms.common.SignInButton
-            android:layout_below="@+id/tvafrican_print"
-            android:id="@+id/googleBTN"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="74dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="8dp"
-            android:alpha="0.8">
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tailor"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="44dp"
+        android:alpha="0.8">
 
-        </com.google.android.gms.common.SignInButton>
+    </com.google.android.gms.common.SignInButton>
         <TextView
             android:id="@+id/tailor"
             android:layout_width="match_parent"
             android:textAlignment="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
             android:layout_marginStart="105dp"
-
-            android:layout_below="@id/googleBTN"
-            android:text="Want to be a Tailor"
-            android:textColor="@color/red_700"
-            android:textSize="11sp"
+            android:text="Want to be a Tailor, Click Here"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:background="@color/yellow_primary_dark"
             android:textStyle="bold" />
 
-    </RelativeLayout>
 
 
 
 
-</android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

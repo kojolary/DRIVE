@@ -26,6 +26,8 @@ import net.vokacom.drive.R;
 import net.vokacom.drive.tailor.register.model.User;
 import net.vokacom.drive.tailor.register.tailorWelcome.*;
 
+import java.util.Objects;
+
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -90,10 +92,10 @@ public class TailorRegister extends AppCompatActivity implements View.OnClickLis
         LayoutInflater inflater = LayoutInflater.from(this);
         View register_layout = inflater.inflate(R.layout.tailor_register_page, null);
 
-        final MaterialEditText edtEmail = findViewById(R.id.edtEmail);
-        final MaterialEditText edtPassword = findViewById(R.id.edtPassword);
-        final MaterialEditText edtName = findViewById(R.id.edtName);
-        final MaterialEditText edtNumber = findViewById(R.id.edtPhone);
+        final MaterialEditText edtEmail = register_layout.findViewById(R.id.edtEmail);
+        final MaterialEditText edtPassword = register_layout.findViewById(R.id.edtPassword);
+        final MaterialEditText edtName = register_layout.findViewById(R.id.edtName);
+        final MaterialEditText edtNumber = register_layout.findViewById(R.id.edtPhone);
 
         dialog.setView(register_layout);
 
@@ -104,17 +106,22 @@ public class TailorRegister extends AppCompatActivity implements View.OnClickLis
 
                 dialog.dismiss();
                 //check validation
-                if (TextUtils.isEmpty(edtEmail.getText().toString())){
+                if (TextUtils.isEmpty(Objects.requireNonNull(edtEmail.getText()).toString())){
                     Snackbar.make(rootLayout,"Please enter email address",Snackbar.LENGTH_SHORT).show();
                     return;
                 }
                 //check validation
-                if (TextUtils.isEmpty(edtNumber.getText().toString())){
+                if (TextUtils.isEmpty(Objects.requireNonNull(edtNumber.getText()).toString())){
                     Snackbar.make(rootLayout,"Please enter phone number",Snackbar.LENGTH_SHORT).show();
                     return;
                 }
                 //check validation
-                if (TextUtils.isEmpty(edtPassword.getText().toString())){
+                if (TextUtils.isEmpty(Objects.requireNonNull(edtName.getText()).toString())){
+                    Snackbar.make(rootLayout,"Please enter Name",Snackbar.LENGTH_SHORT).show();
+                    return;
+                }
+                //check validation
+                if (TextUtils.isEmpty(Objects.requireNonNull(edtPassword.getText()).toString())){
                     Snackbar.make(rootLayout,"Please enter password",Snackbar.LENGTH_SHORT).show();
                     return;
                 }
@@ -186,8 +193,8 @@ public class TailorRegister extends AppCompatActivity implements View.OnClickLis
         LayoutInflater inflater = LayoutInflater.from(this);
         View login_layout = inflater.inflate(R.layout.tailor_login_page, null);
 
-        final MaterialEditText edtEmail = findViewById(R.id.edtEmail);
-        final MaterialEditText edtPassword = findViewById(R.id.edtPassword);
+        final MaterialEditText edtEmail = login_layout.findViewById(R.id.edtEmail);
+        final MaterialEditText edtPassword = login_layout.findViewById(R.id.edtPassword);
 
         dialog.setView(login_layout);
 

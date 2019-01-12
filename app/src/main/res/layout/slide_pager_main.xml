@@ -18,23 +18,10 @@
         android:layout_height="435dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
         android:animateLayoutChanges="?android:attr/windowSwipeToDismiss"
         android:visibility="visible">
-
-
     </android.support.v4.view.ViewPager>
 
-    <TextView
-        android:id="@+id/printsText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/login_btn"
-        android:gravity="center"
-        android:text="We Make and Deliver "
-        android:textColor="@color/white"
-        android:textFontWeight="10"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:layout_below="@id/viewPager"/>
 
 </RelativeLayout>
